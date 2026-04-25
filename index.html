@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUT ICT Department | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+   
+
+    <!-- Hero background and ensure hero text/links are black -->
+    <style>
+        /* Page background stays white */
+        body {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Use front.jpg as the hero image */
+        .hero {
+            background: url("front.jpg") no-repeat center center;
+            background-size: cover;
+            padding: 120px 20px; /* give the image area height */
+        }
+
+            /* Target only the hero section content; keep text and links black */
+            .hero,
+            .hero h2,
+            .hero p,
+            .hero a,
+            .hero a.btn-primary,
+            {
+                color: #F5F5F5 !important;
+            }
+
+                /* Optional: keep text readable on busy images by constraining content width */
+                .hero > div {
+                    max-width: 980px;
+                    margin: 0 auto;
+                    background: rgba(255,255,255,0); /* transparent so image shows through */
+                }
+    </style>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="mut logo.jpg" alt="MUT Logo" class="logo">
+            <div class="logo-text">
+                <h1>ICT Department</h1>
+                <p>Mangosuthu University of Technology</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="career.html">Career Paths</a></li>
+                <li><a href="gallery.html">Student Life</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+                <!-- SMART SEARCH -->
+                <li class="search-container">
+                    <i class="fas fa-search" id="searchIcon"></i>
+
+                    <div class="search-box" id="searchBox">
+                        <input type="text" id="searchInput" placeholder="Search..." />
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h2>Welcome to MUT ICT Department</h2>
+            <p>
+                Welcome, ICT students! This is your hub for exploring courses, engaging with projects, and staying updated on all department news and events.
+                Dive in, connect with your peers, and make the most of your learning journey here in the ICT Department.
+            </p>
+            <a href="programs.html" class="btn-primary">Explore Programs</a>
+            <a href="apply.html" class="btn-secondary">Apply Now</a>
+        </div>
+    </section>
+
+    <section class="notices-section">
+        <strong>Latest Notice:</strong>
+        <marquee id="noticesBox">Waiting for latest updates...</marquee>
+    </section>
+
+
+    <div class="quick-stats">
+
+
+
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="stat-number">360</div>
+            <div class="stat-text">SAQA Credits</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+            <div class="stat-number">3-4</div>
+            <div class="stat-text">Years Duration</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="stat-number">90%+</div>
+            <div class="stat-text">Employment Rate</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="stat-number">8-12</div>
+            <div class="stat-text">Specializations</div>
+        </div>
+        
+    </div>
+
+    <section class="section why-ict">
+        <div class="section-header">
+            <h2>Why Study ICT at MUT?</h2>
+            <p>Our programs combine academic excellence with practical skills for the digital age.</p>
+        </div>
+        <div class="why-content">
+            <div class="why-card">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Industry collaboration">
+                <div class="why-text">
+                    <h3>Industry-Focused Curriculum</h3>
+                    <p>Learn the latest ICT skills through industry collaborations and real-world projects.</p>
+                </div>
+            </div>
+            <div class="why-card">
+                <img src="colab.jpg" alt="Hands-on learning">
+                <div class="why-text">
+                    <h3>Work Integrated Learning</h3>
+                    <p>Internships and practical projects embedded in the curriculum for real experience.</p>
+                </div>
+            </div>
+            <div class="why-card">
+                <img src="gradu.jpg" alt="Graduation ceremony">
+                <div class="why-text">
+                    <h3>High Employment Rate</h3>
+                    <p>Our graduates are highly employable with over 90% finding jobs within 6 months.</p>
+                </div>
+            </div>
+
+            <!-- CHATBOT -->
+            <button id="chatBtn">Chat 💬</button>
+
+            <div id="chatBox">
+                <div id="chatHeader">School Assistant</div>
+                <div id="messages"></div>
+
+                <input type="text" id="userInput" placeholder="Ask a question...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+
+        <div class="footer-top">
+
+            <!-- LEFT SIDE: LOGO + CONTACT -->
+            <div class="footer-column footer-about">
+                <img src="mut logo.jpg" alt="MUT Logo" class="footer-logo">
+
+                <p>
+                    P O Box 12363<br>s
+                    Jacobs<br>
+                    4026
+                </p>
+
+                <p>
+                    511 Griffiths Mxenge Hwy<br>
+                    Umlazi, Durban, 4031
+                </p>
+
+                <p>
+                    <strong>Call centre:</strong> 031 907 7111<br>
+                    <strong>Email:</strong>
+                    <a href="mailto:info@mut.ac.za">info@mut.ac.za</a>
+                </p>
+
+                <a href="https://www.google.com/maps/dir//Mangosuthu+University+of+Technology,+511+Griffiths+Mxenge+Hwy,+Umlazi,+Durban,+4031,+South+Africa/"
+                   target="_blank"
+                   class="footer-btn">
+                    Get Directions
+                </a>
+            </div>
+
+            <!-- QUICK LINKS COLUMN 1 -->
+            <div class="footer-column">
+                <h4>About MUT</h4>
+                <ul>
+                    <li><a href="https://www.mut.ac.za/about-mut/our-story/">Our Story</a></li>
+                    <li><a href="https://www.mut.ac.za/fees-and-funding/bursaries/">Bursaries</a></li>
+                    <li><a href="https://www.mut.ac.za/corporate-identity/">Corporate Identity</a></li>
+                    <li><a href="https://www.tip-offs.com/" target="_blank">MUT Fraud Hotline</a></li>
+                    <li><a href="https://www.mut.ac.za/about-mut/leadership-and-governance/">Leadership & Governance</a></li>
+                </ul>
+            </div>
+
+            <!-- QUICK LINKS COLUMN 2 -->
+            <div class="footer-column">
+                <h4>Prospective Students</h4>
+                <ul>
+                    <li><a href="https://www.mut.ac.za/prospective-students/apply/">Apply to MUT</a></li>
+                    <li><a href="https://www.mut.ac.za/support-services/teaching-learning-dev-centre/first-year-experience-fye/">First Year Experience</a></li>
+                    <li><a href="https://www.mut.ac.za/post-diploma-programmes/">Post-diploma Programmes</a></li>
+                    <li><a href="https://www.mut.ac.za/prospective-students/study-at-mut/">Study at MUT</a></li>
+                    <li><a href="https://www.mut.ac.za/media/publications-2/#flipbook-df_24813/1/" target="_blank">2026–2030 Strategy</a></li>
+                </ul>
+            </div>
+
+            <!-- QUICK LINKS COLUMN 3 -->
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="https://www.mut.ac.za/contact-us/">Contact Us</a></li>
+                    <li><a href="https://www.mut.ac.za/mut-radio/">MUT Radio</a></li>
+                    <li><a href="https://www.mut.ac.za/support-services/mut-internationalisation/">Internationalisation</a></li>
+                    <li><a href="https://www.mut.ac.za/notices/">Notices</a></li>
+                    <li><a href="https://www.nsfas.org.za/content/" target="_blank">NSFAS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM SECTION -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-left">
+                © 2026 Mangosuthu University of Technology. All Rights Reserved.
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/MUTUmlazi/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/MUTcampus" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/c/MangosuthuUniversityofTechnology" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/school/mangosuthu-university-of-technology/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/mut_campus/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <div id="cookieBanner" class="cookie-banner">
+        <p>
+            This website uses cookies to improve your experience.
+            By continuing to use this site, you agree to our cookie policy.
+        </p>
+        <button id="acceptCookies">Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

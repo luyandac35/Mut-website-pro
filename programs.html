@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUT ICT Department | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="mut logo.jpg" alt="MUT Logo" class="logo">
+            <div class="logo-text">
+                <h1>ICT Department</h1>
+                <p>Mangosuthu University of Technology</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" ">Home</a></li>
+                <li><a href="programs.html" class="active">Programs</a></li>
+                <li><a href="career.html">Career Paths</a></li>
+                <li><a href="gallery.html">Student Life</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <img src="diamonds.png" alt="MUT Logo">
+        <h2>Our ICT Programs</h2>
+        <p>Interactive and modern programs designed for a successful ICT career.</p>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="programs-section">
+
+        <div class="program-card">
+            <div class="program-header">
+                <h3>Diploma in Information Technology</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="program-content">
+                <p>NQF Level 6 | SAQA ID: 96861 | 3-Year Full-Time</p>
+                <ul>
+                    <li>360 SAQA Credits</li>
+                    <li>Software development, networking, and database management</li>
+
+                    <div class="program-description">
+                        <h4>Program Overview</h4>
+                        <p>This qualification prepares students for entry-level positions in the ICT industry in either software development or communication networks. Students gain a general all-round working knowledge of the ICT industry with opportunities to specialize in second and third year.</p>
+                    </div>
+
+                    <div class="program-requirements">
+                        <h4>Admission Requirements</h4>
+                        <ul class="requirements-list">
+                            <li>National Senior Certificate (Diploma or higher)</li>
+                            <li>English First Additional Language (3) OR English Home Language (3)</li>
+                            <li>Mathematics (3) OR Mathematical Literacy (5)</li>
+                            <li>Minimum of 24 points in best six subjects</li>
+                            <li>Limited seats based on ranking system</li>
+                        </ul>
+
+                    </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <h3>Extended Curriculum Program</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="program-content">
+                    <p>NQF Level 6 | SAQA ID: 96862 | 4-Year Full-Time</p>
+                    <ul>
+                        <li>480 SAQA Credits</li>
+                        <li>Includes foundation year for additional preparation</li>
+
+                        <div class="program-description">
+                            <h4>Program Overview</h4>
+                            <p>This extended curriculum program includes an additional foundation year to prepare students for the diploma program. It's designed for students who demonstrate aptitude for ICT but need additional preparation to meet the mainstream program requirements.</p>
+                        </div>
+
+                        <div class="program-requirements">
+                            <h4>Admission Requirements</h4>
+                            <ul class="requirements-list">
+                                <li>National Senior Certificate (Diploma or higher)</li>
+                                <li>English First Additional Language (3) OR English Home Language (3)</li>
+                                <li>Mathematics (2) OR Mathematical Literacy (3)</li>
+                                <li>Minimum of 23 points in best six subjects</li>
+                                <li>Selection based on aptitude test or ranking</li>
+                            </ul>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <h3>Advanced Diploma in ICT: Applications Development</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="program-content">
+                    <p>NQF Level 7 | SAQA ID: 117974 | 1-2 Years Full/Part Time</p>
+                    <ul>
+                        <li>120 SAQA Credits</li>
+                        <li>Post-diploma specialization in application development</li>
+
+                        <div class="program-description">
+                            <h4>Program Overview</h4>
+                            <p>This advanced diploma provides specialization in Applications Development, preparing students for advanced roles in the ICT industry or further postgraduate study. It incorporates the latest ICT industry requirements and focuses on continuing professional development.</p>
+                        </div>
+
+                        <div class="program-requirements">
+                            <h4>Admission Requirements</h4>
+                            <ul class="requirements-list">
+                                <li>360-Credit Diploma/National Diploma in ICT (NQF Level 6)</li>
+                                <li>OR Bachelor's Degree in related IT specialization</li>
+                                <li>OR RPL qualification evaluated to NQF level 6</li>
+                                <li>Selection based on academic merit</li>
+                                <li>Limited seats available</li>
+                            </ul>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+    </section>
+
+    <!-- CHATBOT -->
+    <button id="chatBtn">Chat 💬</button>
+
+    <div id="chatBox">
+        <div id="chatHeader">School Assistant</div>
+        <div id="messages"></div>
+
+        <input type="text" id="userInput" placeholder="Ask a question...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <footer class="main-footer">
+
+        <div class="footer-top">
+
+            <!-- LEFT SIDE: LOGO + CONTACT -->
+            <div class="footer-column footer-about">
+                <img src="mut logo.jpg" alt="MUT Logo" class="footer-logo">
+
+                <p>
+                    P O Box 12363<br>s
+                    Jacobs<br>
+                    4026
+                </p>
+
+                <p>
+                    511 Griffiths Mxenge Hwy<br>
+                    Umlazi, Durban, 4031
+                </p>
+
+                <p>
+                    <strong>Call centre:</strong> 031 907 7111<br>
+                    <strong>Email:</strong>
+                    <a href="mailto:info@mut.ac.za">info@mut.ac.za</a>
+                </p>
+
+                <a href="https://www.google.com/maps/dir//Mangosuthu+University+of+Technology,+511+Griffiths+Mxenge+Hwy,+Umlazi,+Durban,+4031,+South+Africa/"
+                   target="_blank"
+                   class="footer-btn">
+                    Get Directions
+                </a>
+            </div>
+
+            <!-- QUICK LINKS COLUMN 1 -->
+            <div class="footer-column">
+                <h4>About MUT</h4>
+                <ul>
+                    <li><a href="https://www.mut.ac.za/about-mut/our-story/">Our Story</a></li>
+                    <li><a href="https://www.mut.ac.za/fees-and-funding/bursaries/">Bursaries</a></li>
+                    <li><a href="https://www.mut.ac.za/corporate-identity/">Corporate Identity</a></li>
+                    <li><a href="https://www.tip-offs.com/" target="_blank">MUT Fraud Hotline</a></li>
+                    <li><a href="https://www.mut.ac.za/about-mut/leadership-and-governance/">Leadership & Governance</a></li>
+                </ul>
+            </div>
+
+            <!-- QUICK LINKS COLUMN 2 -->
+            <div class="footer-column">
+                <h4>Prospective Students</h4>
+                <ul>
+                    <li><a href="https://www.mut.ac.za/prospective-students/apply/">Apply to MUT</a></li>
+                    <li><a href="https://www.mut.ac.za/support-services/teaching-learning-dev-centre/first-year-experience-fye/">First Year Experience</a></li>
+                    <li><a href="https://www.mut.ac.za/post-diploma-programmes/">Post-diploma Programmes</a></li>
+                    <li><a href="https://www.mut.ac.za/prospective-students/study-at-mut/">Study at MUT</a></li>
+                    <li><a href="https://www.mut.ac.za/media/publications-2/#flipbook-df_24813/1/" target="_blank">2026–2030 Strategy</a></li>
+                </ul>
+            </div>
+
+            <!-- QUICK LINKS COLUMN 3 -->
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="https://www.mut.ac.za/contact-us/">Contact Us</a></li>
+                    <li><a href="https://www.mut.ac.za/mut-radio/">MUT Radio</a></li>
+                    <li><a href="https://www.mut.ac.za/support-services/mut-internationalisation/">Internationalisation</a></li>
+                    <li><a href="https://www.mut.ac.za/notices/">Notices</a></li>
+                    <li><a href="https://www.nsfas.org.za/content/" target="_blank">NSFAS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM SECTION -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-left">
+                © 2026 Mangosuthu University of Technology. All Rights Reserved.
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/MUTUmlazi/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/MUTcampus" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="http://www.youtube.com/c/MangosuthuUniversityofTechnology" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/school/mangosuthu-university-of-technology/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/mut_campus/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
+
+<script src="script.js"></script>
+</body>
+</html>

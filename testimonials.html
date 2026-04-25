@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ICT Department | Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="mut logo.jpg" alt="MUT Logo" class="logo">
+            <div class="logo-text">
+                <h1>ICT Department</h1>
+                <p>Mangosuthu University of Technology</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" ">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="career.html">Career Paths</a></li>
+                <li><a href="gallery.html">Student Life</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="testimonials.html" class="active">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h2>What Our Students Say</h2>
+            <p>Hear from our graduates and current students about their ICT journey.</p>
+        </div>
+    </section>
+
+    <section class="section testimonials-section">
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="student-photo">
+                    <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Student">
+                </div>
+                <p>"The ICT program gave me real-world skills that helped me secure a job immediately after graduation."</p>
+                <h4>Thabiso Nkosi</h4>
+                <span>Diploma Graduate</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="student-photo">
+                    <img src="st.jpg" alt="Student">
+                </div>
+                <p>"The networking labs and industry exposure prepared me for the workplace."</p>
+                <h4>Nomvula Dlamini</h4>
+                <span>3rd Year Student</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="student-photo">
+                    <img src="testm.jpg" alt="Student">
+                </div>
+                <p>"The lecturers were supportive and the curriculum was industry relevant."</p>
+                <h4>Sipho Mbatha</h4>
+                <span>Advanced Diploma Graduate</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+
+        <div class="footer-top">
+
+            <!-- LEFT SIDE: LOGO + CONTACT -->
+            <div class="footer-column footer-about">
+                <img src="mut logo.jpg" alt="MUT Logo" class="footer-logo">
+
+                <p>
+                    P O Box 12363<br>s
+                    Jacobs<br>
+                    4026
+                </p>
+
+                <p>
+                    511 Griffiths Mxenge Hwy<br>
+                    Umlazi, Durban, 4031
+                </p>
+
+                <p>
+                    <strong>Call centre:</strong> 031 907 7111<br>
+                    <strong>Email:</strong>
+                    <a href="mailto:info@mut.ac.za">info@mut.ac.za</a>
+                </p>
+
+                <a href="https://www.google.com/maps/dir//Mangosuthu+University+of+Technology,+511+Griffiths+Mxenge+Hwy,+Umlazi,+Durban,+4031,+South+Africa/"
+                   target="_blank"
+                   class="footer-btn">
+                    Get Directions
+                </a>
+
+                <!-- CHATBOT -->
+                <button id="chatBtn">Chat 💬</button>
+
+                <div id="chatBox">
+                    <div id="chatHeader">School Assistant</div>
+                    <div id="messages"></div>
+
+                    <input type="text" id="userInput" placeholder="Ask a question...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS COLUMN 1 -->
+            <div class="footer-column">
+                <h4>About MUT</h4>
+                <ul>
+                    <li><a href="https://www.mut.ac.za/about-mut/our-story/">Our Story</a></li>
+                    <li><a href="https://www.mut.ac.za/fees-and-funding/bursaries/">Bursaries</a></li>
+                    <li><a href="https://www.mut.ac.za/corporate-identity/">Corporate Identity</a></li>
+                    <li><a href="https://www.tip-offs.com/" target="_blank">MUT Fraud Hotline</a></li>
+                    <li><a href="https://www.mut.ac.za/about-mut/leadership-and-governance/">Leadership & Governance</a></li>
+                </ul>
+            </div>
+
+            <!-- QUICK LINKS COLUMN 2 -->
+            <div class="footer-column">
+                <h4>Prospective Students</h4>
+                <ul>
+                    <li><a href="https://www.mut.ac.za/prospective-students/apply/">Apply to MUT</a></li>
+                    <li><a href="https://www.mut.ac.za/support-services/teaching-learning-dev-centre/first-year-experience-fye/">First Year Experience</a></li>
+                    <li><a href="https://www.mut.ac.za/post-diploma-programmes/">Post-diploma Programmes</a></li>
+                    <li><a href="https://www.mut.ac.za/prospective-students/study-at-mut/">Study at MUT</a></li>
+                    <li><a href="https://www.mut.ac.za/media/publications-2/#flipbook-df_24813/1/" target="_blank">2026–2030 Strategy</a></li>
+                </ul>
+            </div>
+
+            <!-- QUICK LINKS COLUMN 3 -->
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="https://www.mut.ac.za/contact-us/">Contact Us</a></li>
+                    <li><a href="https://www.mut.ac.za/mut-radio/">MUT Radio</a></li>
+                    <li><a href="https://www.mut.ac.za/support-services/mut-internationalisation/">Internationalisation</a></li>
+                    <li><a href="https://www.mut.ac.za/notices/">Notices</a></li>
+                    <li><a href="https://www.nsfas.org.za/content/" target="_blank">NSFAS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM SECTION -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-left">
+                © 2026 Mangosuthu University of Technology. All Rights Reserved.
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/MUTUmlazi/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/MUTcampus" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="http://www.youtube.com/c/MangosuthuUniversityofTechnology" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/school/mangosuthu-university-of-technology/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/mut_campus/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

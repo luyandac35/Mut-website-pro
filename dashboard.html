@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | ICT Department - MUT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo-container">
+        <img src="mut logo.jpg" alt="MUT Logo" class="logo">
+        <div class="logo-text">
+            <h1>ICT Department</h1>
+            <p>Mangosuthu University of Technology</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="career.html">Career Paths</a></li>
+            <li><a href="gallery.html">Student Life</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <div class="page-hero-content">
+        <h2>Student Dashboard</h2>
+        <p>Quick access to student progress, modules, tasks, and updates.</p>
+    </div>
+</section>
+
+<section class="quick-stats">
+    <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-book"></i></div>
+        <div class="stat-number">4</div>
+        <div class="stat-text">Registered Modules</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-tasks"></i></div>
+        <div class="stat-number">2</div>
+        <div class="stat-text">Assignments Due</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+        <div class="stat-number">87%</div>
+        <div class="stat-text">Attendance</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-bell"></i></div>
+        <div class="stat-number">3</div>
+        <div class="stat-text">New Notices</div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2>My Academic Overview</h2>
+        <p>Student dashboard mockup for ICT learners.</p>
+    </div>
+
+    <div class="career-grid">
+        <div class="career-card">
+            <i class="fas fa-laptop-code career-icon"></i>
+            <h3>Current Modules</h3>
+            <ul>
+                <li>Information Systems III</li>
+                <li>Web Development</li>
+                <li>Database Systems</li>
+                <li>Networking</li>
+            </ul>
+        </div>
+
+        <div class="career-card">
+            <i class="fas fa-file-alt career-icon"></i>
+            <h3>Upcoming Tasks</h3>
+            <ul>
+                <li>Website project submission</li>
+                <li>Database practical</li>
+                <li>Networking quiz</li>
+            </ul>
+        </div>
+
+        <div class="career-card">
+            <i class="fas fa-bullhorn career-icon"></i>
+            <h3>Student Notices</h3>
+            <ul>
+                <li>Check timetable updates</li>
+                <li>WIL briefing coming soon</li>
+                <li>NSFAS updates available</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CHATBOT -->
+<button id="chatBtn">Chat 💬</button>
+
+<div id="chatBox">
+    <div id="chatHeader">School Assistant</div>
+    <div id="messages"></div>
+
+    <input type="text" id="userInput" placeholder="Ask a question...">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-bottom">
+        © 2026 Mangosuthu University of Technology. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
